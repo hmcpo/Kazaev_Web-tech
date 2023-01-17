@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JavaScript.js"></script>
+    <link rel="stylesheet" href= "style.css" >
+</head>
+<body>
+    <div id="header">
+        <div id = "headerText">
+            <div>
+                <img src="icon2.png" height="20px"> </img> Apps </div>
+            <div>
+                <h1>С помощью нас вы сможете создать то, о чем желаете!</h1>
+            </div>
+            <div style="font-size: 20px;">Наши возможности плюс опыт позволят Вам достичь огромного успеха. Мы верим в вас! 
+                И знаем это на все 100%. Вас не остановить! </div> 
+            <input style="background-color:yellow; padding: 15px; font-weight: bold;" type = "button" value = "Узнать больше..." />
+
+        
+        </div>
+            <img id = "headerImage" src="image2.jpg"> </img>
+        </div> 
+    
+    
+        <form action="#" method="post" enctype="multipart/form-data"><h2 style="text-align:center">Форма валидации через JS</h2>
+            <div class = "form1">
+                <div>First Name:</div>
+                <input class="form-control" id="first" type="text" onblur="checkFirst();" required /></div>
+                <div><span id="first_Check"></span></div>
+            </div>
+            <div class = "form1">
+                <div>Last Name:</div>
+                <div><input class="form-control" id="last" type="text" onblur="checkLast();" required /></div>
+                <div><span id="last_Check"></span></div>
+            </div>
+            <div class = "form1">
+                <div>Phone number:</div>
+                <div><input class="form-control" id="phone" type="text" onblur="checkPhone();" placeholder="xxx-xxx-xxx" required /></div>
+                <div><span id="phone_Check"></span></div>
+            </div>
+            <div class = "form1">
+                <div>Destination:</div>
+                <div><input class="form-control" id="dest" type="text" onblur="checkDest();" required /></div>
+                <div><span id="dest_Check"></span></div>
+            </div>
+            <div class = "form1">
+                <div>Date and Time:</div>
+                <div>
+                    <input class="form-control" id="date" type="date" required />
+                    <input class="form-control" id="time" type="time" required />
+                </div>
+            </div>
+            <div class = "form1">
+                <div>Quantity:</div>
+                <div><input class="form-control" id="quantity" type="number" min="1" max="5" required /></div>
+            </div>
+            <div class = "form1">
+                <div>Payment method:</div>
+                <div>                                    
+                    <select class="form-control" name="paymethod" id="paymethod" required>
+                        <option>Cash</option>
+                        <option>Card</option>
+                        <option>PayPal</option>
+                    </select>
+                </div>
+            </div>
+            <div class = "form1">
+                <div><input id="sendOrder" onclick="outputData();" type = "button" value = "Отправить вопрос!" ></div>
+            </div>
+        </form>
+        <div>
+            <h5>Order Summary</h5>
+            <span id="summary"></span>
+        </div>
+    
+        <h2 style="text-align:center;"> Что Вам необходимо? </h2>   
+    
+    <div id="main"> 
+                <div class = "block">
+                    <img src="icon2.png" height="100px"> </img>
+                    <h3> Первый блок </h3>
+                    <div> Lorem ipsum dolor sit amet. Aut adipisci repudiandae qui consequuntur omnis et aliquid expedita </div>
+                </div>
+                <div class = "block">
+                    <img src="icon2.png" height="100px"> </img>
+                    <h3> Второй блок </h3>
+                    <div> Lorem ipsum dolor sit amet. Aut adipisci repudiandae qui consequuntur omnis et aliquid expedita </div>
+                </div>
+                <div class = "block">
+                    <img src="icon2.png" height="100px"> </img>
+                    <h3> Третий блок </h3>
+                    <div> Lorem ipsum dolor sit amet. Aut adipisci repudiandae qui consequuntur omnis et aliquid expedita </div>
+                </div>
+        </div>
+
+        <form action="#" method="post" enctype="multipart/form-data"><h2 style="text-align:center">Форма валидации через HTML 5</h2>
+        <div id = "callback">
+            <input type = "text" placeholder="Введите Имя" required data-reg = "^[А-ЯЁ][а-яё]*$">
+        </div>
+
+        <div id = "callback">
+            <input type = "email" placeholder="Введите свой E-mail" required>
+        </div>
+
+        <div id = "callback">
+            <input type = "tel" placeholder="Введите Телефон" required minlength="9" maxlength="11">
+        </div>
+
+        <div id = "callback">
+            <input placeholder="Какая тема Вас интересует?" required>
+        </div>
+        <div id = "callback">    
+            <input style="background-color:yellow; padding: 15px; font-weight: bold;" type = "submit" value = "Отправить вопрос!" />
+        </div> 
+    </form>
+
+</body>
+</html>
